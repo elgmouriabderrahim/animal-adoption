@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: url(bg.jpg);
+    backdrop-filter: blur(5px);
+}
+.card {
+    width: 50%;
+    height: 80%;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    position: relative;
+    overflow: hidden;
+}
+#animal-image {
+    width: 100%;
+    height: 100%;
+}
+
+.buttons {
+    position: absolute;
+    width: 50px;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -30%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#heart, #dislike, #fav {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 20px black;
+}
+ #fav {
+    color: red;
+ }
+#heart:hover, #dislike:hover, #fav:hover {
+    color: red;
+    text-shadow: 0 0 10px black;
+}
+
+.fav:hover {
+    color: red;
+    text-shadow: 0 0 10px black;
+}
+.next:hover {
+
+    background-color: rgba(0, 128, 0, 0.843);
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 80%;
+    }
+.container > * {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+h1 {
+    text-align: center;
+}
